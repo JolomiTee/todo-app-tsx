@@ -1,0 +1,82 @@
+#root {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+form{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.input__box{
+    width: 100%;
+    border-radius: 50px;
+    padding: 20px 30px;
+    font-size: 25px;
+    border: none;
+    transition: .2s;
+    box-shadow: inset 0 0 5px black;
+}
+.input__box:focus{
+    box-shadow: 0 0  10px 1000px black;
+    outline: none;
+}
+.input__button{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    margin: 12px;
+    border-radius: 50px;
+    right: 0px;
+    border: none;
+    font-size: 15px;
+    background-color: lightblue;
+    color: white;
+    transition: .2s all;
+    box-shadow: 0 0 10px  #000;
+}
+.todos{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    flex-wrap: wrap;
+}
+.todos__single{
+    display: flex;
+    min-width: 300px;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+    background-color: yellowgreen;
+}
+.todos__single--text{
+    flex: 1;
+    padding: 5px;
+    border: none;
+    font-size: 16px;
+    text-align: start;
+}
+.todos__single--text:focus{
+    border: none;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.icon{
+    font-size: 24px;
+}
+
+@media (max-width: 700px){
+    .input{
+        width: 95%;
+    }
+    .todos{
+        width: 95%;
+    }
+    .todos__single{
+        width: 100%;
+    }
+}
