@@ -24,8 +24,7 @@ function App() {
 			<h1 className="heading">Taskify</h1>
 			<InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
 
-            <TodoList todos={todos} setTodos={setTodos} />
-
+			<TodoList todos={todos} setTodos={setTodos} />
 		</div>
 	);
 }

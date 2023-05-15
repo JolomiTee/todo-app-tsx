@@ -1,15 +1,17 @@
 #root {
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 1rem;
-  text-align: center;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
 }
-form{
+
+form {
     display: flex;
     position: relative;
     align-items: center;
 }
-.input__box{
+
+.input__box {
     width: 100%;
     border-radius: 50px;
     padding: 20px 30px;
@@ -18,11 +20,13 @@ form{
     transition: .2s;
     box-shadow: inset 0 0 5px black;
 }
-.input__box:focus{
-    box-shadow: 0 0  10px 1000px black;
+
+.input__box:focus {
+    box-shadow: 0 0 10px 1000px black;
     outline: none;
 }
-.input__button{
+
+.input__button {
     position: absolute;
     height: 50px;
     width: 50px;
@@ -34,15 +38,17 @@ form{
     background-color: lightblue;
     color: white;
     transition: .2s all;
-    box-shadow: 0 0 10px  #000;
+    box-shadow: 0 0 10px #000;
 }
-.todos{
+
+.todos {
     display: flex;
     justify-content: space-evenly;
     width: 90%;
     flex-wrap: wrap;
 }
-.todos__single{
+
+.todos__single {
     display: flex;
     min-width: 300px;
     border-radius: 5px;
@@ -50,33 +56,39 @@ form{
     margin-top: 15px;
     background-color: yellowgreen;
 }
-.todos__single--text{
+
+.todos__single--text {
     flex: 1;
     padding: 5px;
     border: none;
     font-size: 16px;
     text-align: start;
 }
-.todos__single--text:focus{
+
+.todos__single--text:focus {
     border: none;
 }
-.icons{
+
+.icons {
     display: flex;
     justify-content: space-between;
     gap: 10px;
 }
-.icon{
+
+.icon {
     font-size: 24px;
 }
 
-@media (max-width: 700px){
-    .input{
+@media (max-width: 700px) {
+    .input {
         width: 95%;
     }
-    .todos{
+
+    .todos {
         width: 95%;
     }
-    .todos__single{
+
+    .todos__single {
         width: 100%;
     }
 }
